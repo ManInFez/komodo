@@ -1,0 +1,13 @@
+
+
+export KOMODO_ROOT=komodo_root
+KOMODO_RELEASE_REAL=komodo_release
+
+if [[ $(uname -r) == *el7* ]] ; then
+    source $KOMODO_ROOT/$KOMODO_RELEASE_REAL-rhel7/enable
+else
+    source $KOMODO_ROOT/$KOMODO_RELEASE_REAL-rhel6/enable
+fi
+
+export PS1="(${KOMODO_RELEASE_REAL}) ${_PRE_KOMODO_PS1}"
+export KOMDO_RELEASE=$KOMODO_RELEASE_REAL
