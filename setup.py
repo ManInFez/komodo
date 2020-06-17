@@ -24,6 +24,7 @@ setup(
             "komodo-suggest-symlinks = komodo.symlink.suggester.cli:main",
             "komodo-extract-dep-graph = komodo.extract_dep_graph:main",
             "komodo-lint-package-status = komodo.lint_package_status:main",
+            'komodo-clean-repository = komodo.release_cleanup:main',
         ]
     },
 )
